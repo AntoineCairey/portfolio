@@ -1,35 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useRef } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const handleClick = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="page">
+      <header>
+        <h1>Antoine Cairey</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#!" onClick={() => handleClick(aboutRef)}>
+                Présentation
+              </a>
+            </li>
+            <li>
+              <a href="#!" onClick={() => handleClick(projectsRef)}>
+                Projets
+              </a>
+            </li>
+            <li>
+              <a href="#!" onClick={() => handleClick(contactRef)}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section ref={aboutRef} className="about">
+          <h2>Bonjour !</h2>
+          <p>Je suis Antoine Cairey, développeur JavaScript fullstack junior</p>
+          <div>
+            <a href="">{">"} CV </a>
+            <a href="https://www.linkedin.com/in/antoine-cairey/">
+              {">"} LinkedIn{" "}
+            </a>
+            <a href="https://github.com/AntoineCairey">{">"} GitHub </a>
+          </div>
+        </section>
+
+        <section ref={projectsRef} className="projects">
+          <h2>Projets</h2>
+          <div className="projects-list">
+            <div>Geocode</div>
+            <div>Elemen5</div>
+            <div>Rodolf</div>
+          </div>
+        </section>
+
+        <section ref={contactRef} className="contact">
+          <h2>Contact</h2>
+          <a href="">
+              {">"} cairey.antoine@gmail.com{" "}
+            </a>
+            <a href="https://www.linkedin.com/in/antoine-cairey/">
+              {">"} LinkedIn{" "}
+            </a>
+        </section>
+      </main>
+
+      <footer>
+        <div>Réalisé à Bordeaux par Antoine Cairey</div>
+        <a href="https://github.com/AntoineCairey/portfolio">{">"} Repo GitHub </a>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;

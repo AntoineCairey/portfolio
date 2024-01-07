@@ -1,42 +1,146 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Luckiest+Guy&display=swap");
+
+:root {
+  --header-height: 99px;
+
+  --global-padding: 48px;
+
+  --medium-padding: 24px;
+  --small-padding: 12px;
+  --micro-padding: 6px;
+
+  --medium-spacing: 24px;
+  --small-spacing: 12px;
+  --micro-spacing: 6px;
+  --scrollbar-width: 8px;
+
+  --border-width: 2px;
+  --border-radius: 12px;
+  --border: var(--border-width) solid var(--dark-gray);
+
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.8rem;
+  --h3-font-size: 1.6rem;
+  --h4-font-size: 1.4rem;
+  --h5-font-size: 1.2rem;
+  --text-font-size: 1rem;
+
+  --green: #4aa84a;
+  --cyan: cyan;
+  --red: lightcoral;
+  --focus-or-hover-border-color: #8d8e93;
+  --focus-or-hover-bg-color: #323438;
+  --gray: rgb(128, 128, 128);
+  --dark-gray: #3f4148;
+  --very-dark-gray: #26282c;
+
+  --background-color: #1e1f22;
+  --text-color: white;
+  --muted-text-color: var(--gray);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: cyan;
+
+  &:hover {
+    text-decoration: underline;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+h2 {
+  margin-bottom: var(--medium-spacing);
+}
+
+.page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  padding: 0 var(--global-padding);
+}
+
+header {
+  height: var(--header-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: var(--medium-spacing);
+
+    a {
+      color: lightgrey;
+
+      &:hover {
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    }
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+main {
+  flex: 1;
+}
+
+section {
+  min-height: calc(100vh - var(--header-height));
+  padding-top: calc(var(--header-height) + var(--medium-spacing));
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  align-items: center;
+  justify-content: center;
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 
-.card {
-  padding: 2em;
+.projects-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+
+  div {
+    border: var(--border);
+    height: 200px;
+    width: 200px;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+footer {
+  border-top: var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--medium-padding);
+  margin-top: auto;
 }
