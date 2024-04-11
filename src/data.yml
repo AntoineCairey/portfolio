@@ -1,0 +1,140 @@
+menu:
+  about_me:
+    en: About me
+    fr: Présentation
+  projects:
+    en: Projects
+    fr: Projets
+  contact:
+    en: Contact
+    fr: Contact
+
+about_me:
+  greeting:
+    en: Hello ! 👋
+    fr: Bonjour ! 👋
+  description:
+    en: >
+      <p>I'm Antoine Cairey, <strong>JavaScript fullstack developer.</strong></p>
+      <br />
+      <p>After studying general engineering and 7 years as an IT project manager, I decided to switch to the other side and become a web developer.</p>
+      <br />
+      <p>I'm now looking for a company to put my skills and motivation to good use. I've mastered <strong>React</strong> and <strong>Node.js</strong>, and I'm not afraid to learn new technologies!</p>
+    fr: >
+      <p>Je suis Antoine Cairey, <strong>développeur JavaScript fullstack.</strong></p>
+      <br />
+      <p>Après des études d'ingénieur généraliste et 7 ans en tant que chef de projet informatique, j'ai choisi de passer de l'autre côté de la barrière pour devenir développeur web.</p>
+      <br />
+      <p>Je cherche aujourd'hui une entreprise pour mettre à profit mes compétences et ma motivation. Je maîtrise <strong>React</strong> et <strong>Node.js</strong>, et je n'ai pas peur d'apprendre de nouvelles technos !</p>
+
+contact:
+  text:
+    en: Don't hesitate to contact me!
+    fr: N’hésitez pas à me contacter !
+
+footer:
+  text:
+    en: Made in Bordeaux by Antoine Cairey
+    fr: Réalisé à Bordeaux par Antoine Cairey
+  repo_link:
+    en: GitHub repo for this website
+    fr: Dépôt Github de ce site
+
+project_page:
+  back:
+    en: Back
+    fr: Retour
+  site_link:
+    en: Go to website
+    fr: Accéder au site
+
+projects:
+  geocode:
+    name: Geocode
+    link: https://lesgeocodeurs.laloupe-1.wilders.dev/
+    date:
+      en: jan-feb 2024
+      fr: janv-fev 2024
+    team:
+      en: Group project (3 devs)
+      fr: Projet de groupe (3 devs)
+    tech:
+      - name: React
+        icon: faReact
+      - name: Node.js
+        icon: faNodeJs
+      - name: MySQL
+        icon: faDatabase
+    short_text:
+      en: Reservation website for electric vehicle charging stations
+      fr: Site web de réservation de bornes de recharge pour véhicules électriques
+    long_text:
+      en: >
+        <p>This project is the last in my training, and the one I submitted for my professional qualification.</p>
+        <br />
+        <p>It was a group project carried out with 2 other developers over 2 months.</p>
+        <br />
+        <p>The aim was to create a site for consulting and reserving charging stations for electric vehicles.</p>
+        <br />
+        <p>This involved setting up an interactive map and managing user accounts within the application.</p>
+        <br />
+        <p>The site was developed in React and Node.js, with a MySQL database.</p>
+      fr: >
+        <p>Ce projet est le dernier de ma formation, et celui que j’ai présenté pour le passage de mon titre professionnel.</p>
+        <br />
+        <p>C’est un projet de groupe réalisé avec 2 autres développeurs pendant 2 mois.</p>
+        <br />
+        <p>L’objectif était de réaliser un site permettant de consulter et réserver des bornes de recharges pour véhicules électriques.</p>
+        <br />
+        <p>Cela impliquait notamment la mise en place d’une carte interactive et la gestion de comptes utilisateurs au sein de l’application.</p>
+        <br />
+        <p>Le site a été réalisé en React et Node.js, avec une base de données MySQL.</p>
+
+  elemen5:
+    name: Elemen5
+    date:
+      en: dec 2023 - jan 2024
+      fr: dec 2023 - janv 2024
+    team:
+      en: Group project (5 devs)
+      fr: Projet de groupe (5 devs)
+    tech:
+      - name: React
+        icon: faReact
+    short_text:
+      en: Film and series catalog inspired by IMDb
+      fr: Catalogue de film et séries inspiré de IMDb
+
+  rodolf:
+    name: Rodolf
+    date:
+      en: dec 2023 (2-day hackathon)
+      fr: dec 2023 (hackathon 2 jours)
+    team:
+      en: Group project (3 devs)
+      fr: Projet de groupe (3 devs)
+    tech:
+      - name: React
+        icon: faReact
+    short_text:
+      en: Mobile game to liven up family meals
+      fr: Jeu mobile pour animer les repas de famille
+
+  mon_parfum:
+    name: Mon Parfum
+    date:
+      en: jan 2023 (3-day hackathon)
+      fr: janv 2023 (hackathon 3 jours)
+    team:
+      en: Group project (5 devs)
+      fr: Projet de groupe (5 devs)
+    tech:
+      - name: React
+        icon: faReact
+      - name: Node.js
+        icon: faNodeJs
+      - name: MySQL
+        icon: faDatabase
+    short_text:
+      en: Fragrance recommendation based on your favorite scents
+      fr: Recommandation de parfum basée sur vos odeurs préférées
