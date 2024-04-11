@@ -130,6 +130,31 @@ header {
         text-decoration: none;
       }
     }
+
+    .lang-select {
+      display: flex;
+      border: 1px solid white;
+      border-radius: 5px;
+      position: relative;
+      cursor: pointer;
+
+      div {
+        width: 50%;
+        height: 100%;
+        padding: var(--small-padding);
+      }
+
+      .select-pointer {
+        position: absolute;
+        background-color: darkcyan;
+        z-index: -1;
+        transition: 2s;
+      }
+
+      .en {
+        left: 50%
+      }
+    }
   }
 }
 

@@ -26,14 +26,17 @@ function App() {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const changeLang = (e) => {
+    e.preventDefault();
+    setLang(lang === "fr" ? "en" : "fr");
+  };
+
   console.log(data);
 
   return (
     <div className="page">
       <header>
-        <h1 onClick={() => setLang(lang === "fr" ? "en" : "fr")}>
-          Antoine Cairey
-        </h1>
+        <h1>Antoine Cairey</h1>
         <nav className="menu-desktop">
           <ul>
             <li>
@@ -53,6 +56,13 @@ function App() {
                 <FontAwesomeIcon icon={faEnvelope} /> {data?.menu.contact[lang]}
               </a>
             </li>
+
+            <div className="lang-select" onClick={changeLang}>
+              
+              <div className={`select-pointer ${lang}`}></div>
+              <div>fr</div>
+              <div>en</div>
+            </div>
           </ul>
         </nav>
         <button
@@ -118,7 +128,11 @@ function App() {
           <h2>Projets</h2>
           <div className="projects-list">
             {projects.map((project) => (
-              <ProjectCard key={project} project={data?.projects[project]} lang={lang} />
+              <ProjectCard
+                key={project}
+                project={data?.projects[project]}
+                lang={lang}
+              />
             ))}
           </div>
         </section>
@@ -138,7 +152,8 @@ function App() {
       <footer>
         <div>{data?.footer.text[lang]}</div>
         <a href="https://github.com/AntoineCairey/portfolio">
-          {">"} <FontAwesomeIcon icon={faGithub} /> {data?.footer.repo_link[lang]}
+          {">"} <FontAwesomeIcon icon={faGithub} />{" "}
+          {data?.footer.repo_link[lang]}
         </a>
       </footer>
     </div>
