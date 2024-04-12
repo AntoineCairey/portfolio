@@ -47,11 +47,22 @@ project_page:
   site_link:
     en: Go to website
     fr: Accéder au site
+  context:
+    en: Context
+    fr: Contexte
+  development:
+    en: Development
+    fr: Réalisation
+  feedback:
+    en: Feedback
+    fr: Retour d'expérience
+
 
 projects:
   geocode:
     name: Geocode
     link: https://lesgeocodeurs.laloupe-1.wilders.dev/
+    img_nb: 1
     date:
       en: jan-feb 2024
       fr: janv-fev 2024
@@ -68,60 +79,20 @@ projects:
     short_text:
       en: Reservation website for electric vehicle charging stations
       fr: Site web de réservation de bornes de recharge pour véhicules électriques
-    long_text:
-      en: >
-        <p>This project is the last in my training, and the one I submitted for my professional qualification.</p>
-        <br />
-        <p>It was a group project carried out with 2 other developers over 2 months.</p>
-        <br />
-        <p>The aim was to create a site for consulting and reserving charging stations for electric vehicles.</p>
-        <br />
-        <p>This involved setting up an interactive map and managing user accounts within the application.</p>
-        <br />
-        <p>The site was developed in React and Node.js, with a MySQL database.</p>
-      fr: >
-        <p>Ce projet est le dernier de ma formation, et celui que j’ai présenté pour le passage de mon titre professionnel.</p>
-        <br />
-        <p>C’est un projet de groupe réalisé avec 2 autres développeurs pendant 2 mois.</p>
-        <br />
-        <p>L’objectif était de réaliser un site permettant de consulter et réserver des bornes de recharges pour véhicules électriques.</p>
-        <br />
-        <p>Cela impliquait notamment la mise en place d’une carte interactive et la gestion de comptes utilisateurs au sein de l’application.</p>
-        <br />
-        <p>Le site a été réalisé en React et Node.js, avec une base de données MySQL.</p>
+    context:
+      en: This is the last project of my training, carried out with 2 other devs over 2 months in all. The objective here is to create an app for reserving charging stations for electric vehicles. It has to include an interactive map and user account management (registration, login, etc.). 
+      fr: Il s’agit du dernier projet de ma formation, réalisé avec 2 autres devs sur 2 mois en tout. L’objectif ici est de réaliser une app de réservation de bornes de recharges pour véhicules électriques. Elle doit comporter notamment une carte interactive et une gestion de compte utilisateur (inscription, connexion, etc). 
+    development:
+      en: The frontend uses React and its ecosystem. The map uses the Google Maps API, and styling is based on the MDBootstrap UI library. The backend is an API server in Express.js, with authentication via JWT and route protection according to user role. Data is stored on MySQL.
+      fr: Le frontend utilise React et son écosystème. La carte utilise l’API Google Maps, et le style est basé sur la librairie UI MDBootstrap. Le backend est un serveur d’API en Express.js, avec authentification via JWT et protection des routes selon le rôle de l’utilisateur. Les données sont stockées sur MySQL.
+    feedback:
+      en: I particularly enjoyed working on user authentication (frontend and backend), as well as the interactive map, 2 technical challenges I'd never tackled before.
+      fr: J’ai particulièrement aimé travailler sur l’authentification utilisateur (frontend et backend), ainsi que sur la carte interactive, 2 défis techniques que je n’avais jamais relevés.
 
-  elemen5:
-    name: Elemen5
-    date:
-      en: dec 2023 - jan 2024
-      fr: dec 2023 - janv 2024
-    team:
-      en: Group project (5 devs)
-      fr: Projet de groupe (5 devs)
-    tech:
-      - name: React
-        icon: faReact
-    short_text:
-      en: Film and series catalog inspired by IMDb
-      fr: Catalogue de film et séries inspiré de IMDb
-
-  rodolf:
-    name: Rodolf
-    date:
-      en: dec 2023 (2-day hackathon)
-      fr: dec 2023 (hackathon 2 jours)
-    team:
-      en: Group project (3 devs)
-      fr: Projet de groupe (3 devs)
-    tech:
-      - name: React
-        icon: faReact
-    short_text:
-      en: Mobile game to liven up family meals
-      fr: Jeu mobile pour animer les repas de famille
-
-  mon_parfum:
-    name: Mon Parfum
+  fragrance:
+    name: Fragrance
+    link: https://www.loreal.com/fr/groupe/
+    img_nb: 1
     date:
       en: jan 2023 (3-day hackathon)
       fr: janv 2023 (hackathon 3 jours)
@@ -138,3 +109,64 @@ projects:
     short_text:
       en: Fragrance recommendation based on your favorite scents
       fr: Recommandation de parfum basée sur vos odeurs préférées
+    context:
+      en: Project created with 4 other devs, during a 3-day hackathon in partnership with the L'Oréal group. The application begins by asking the user if he or she enjoys different everyday scents. Then, based on their answers, it suggests a selection of fragrances suited to their preferences.
+      fr: Projet créé avec 4 autres devs, lors d’un hackathon de 3 jours en partenariat avec le groupe L’Oréal. L’application commence demander à l’utilisateur s’il apprécie différentes odeurs du quotidien. Puis, à partir de ses réponses, elle lui propose une sélection de parfums adaptés à ses préférences.
+    development:
+      en: The interface is based on React, and the styling is in vanilla CSS. The Express.js backend relies on the MySQL database to calculate the recommendations returned to the user.
+      fr: L’interface est basée sur React, et le style est en CSS vanilla. Le backend Express.js se base sur la base de données MySQL pour calculer les recommandations renvoyées à l’utilisateur.
+    feedback:
+      en: Creating a fullstack app in such a short time was very rewarding. I particularly enjoyed working on the perfume recommendation algorithm, a very interesting technical challenge.
+      fr: Créer une app fullstack dans un temps aussi court était très enrichissant. J’ai particulièrement apprécié travailler sur l’algorithme de recommandation des parfums, un challenge technique très intéressant.
+
+  elemen5:
+    name: Elemen5
+    link: https://elemen5.vercel.app/
+    img_nb: 1
+    date:
+      en: dec 2023 - jan 2024
+      fr: dec 2023 - janv 2024
+    team:
+      en: Group project (5 devs)
+      fr: Projet de groupe (5 devs)
+    tech:
+      - name: React
+        icon: faReact
+    short_text:
+      en: Film and series catalog inspired by IMDb
+      fr: Catalogue de film et séries inspiré de IMDb
+    context:
+      en: Project carried out during my training with 4 other devs over 1 month. The idea here is to create a "catalog" app for films and series, a bit like IMDb. The app features a home page with suggestions, a search function using text and filters, and of course the film and series cards.
+      fr: Projet réalisé pendant ma formation avec 4 autres devs sur 1 mois. L’idée ici est de réaliser une app “catalogue” de films et séries, un peu comme IMDb. L’app présente une page d’accueil avec des suggestions, une fonction de recherche par texte et filtre, et bien sûr les fiches de films et séries.
+    development:
+      en: The frontend is built with React and the styling with Sass. The data comes from TMDB, a community site that provides a comprehensive public API.
+      fr: Le frontend est réalisé avec React et le style en Sass. Les données proviennent de TMDB, un site communautaire qui fournit une API publique très complète.
+    feedback:
+      en: This was my first major project using React, and it enabled me to understand its advantages and disadvantages. It was also an opportunity to set up a real Git workflow to work in parallel on the project.
+      fr: Un premier projet d’envergure en React, qui m’a permis d’en comprendre les avantages et inconvénients. C’était aussi l’occasion de mettre en place un vrai workflow Git pour travailler en parallèle sur le projet.
+
+  rodolf:
+    name: Rodolf
+    link: https://rodolf.vercel.app/
+    img_nb: 3
+    date:
+      en: dec 2023 (2-day hackathon)
+      fr: dec 2023 (hackathon 2 jours)
+    team:
+      en: Group project (3 devs)
+      fr: Projet de groupe (3 devs)
+    tech:
+      - name: React
+        icon: faReact
+    short_text:
+      en: Mobile game to liven up family meals
+      fr: Jeu mobile pour animer les repas de famille
+    context:
+      en: Project created with 2 other devs during a 2-day holiday-themed hackathon. We wanted to create a kind of atmospheric game for family dinners, offering jokes, challenges and puzzles to players in turn.
+      fr: Projet créé avec 2 autres devs lors d’un hackathon de 2 jours sur le thème des fêtes de fin d’année. Nous avons voulu créer une sorte de jeu d’ambiance pour les repas de famille, qui propose des blagues, défis et énigmes aux joueurs à tour de rôle.
+    development:
+      en: The app is frontend-only, built in React. Joke and game data are retrieved in a JSON file.
+      fr: L’app est uniquement frontend, réalisée en React. Les données des blagues et jeux sont récupérées dans un fichier JSON.
+    feedback:
+      en: The short time frame taught us to work under pressure and prioritize the most important tasks. It was quite a success, as we won the hackathon 🏆
+      fr: Le temps imparti très court apprend à travailler sous pression et prioriser les tâches les plus importantes. Ce fut plutôt une réussite car nous avons remporté ce hackathon 🏆

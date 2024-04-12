@@ -246,6 +246,12 @@ footer {
   margin-top: auto;
 }
 
+.project-page {
+  img {
+    max-height: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   .projects-list {
     grid-template-columns: 1fr 1fr;
