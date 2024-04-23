@@ -1,20 +1,14 @@
 import { useRef, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAddressCard,
-  faBars,
-  faEnvelope,
-  faFile,
-  faFileCode,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-// import data from "../data.yml";
 import ProjectCard from "./ProjectCard";
+import Nav from "./Nav";
 
 export default function Home() {
-  const { data, lang, setLang } = useOutletContext();
+  const { data, lang } = useOutletContext();
   const [showMenu, setShowMenu] = useState(false);
   const projects = ["geocode", "fragrance", "elemen5", "rodolf"];
 
@@ -22,49 +16,13 @@ export default function Home() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const handleClick = (ref) => {
-    setShowMenu(false);
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const changeLang = (e) => {
-    e.preventDefault();
-    setLang(lang === "fr" ? "en" : "fr");
-  };
-
   console.log(data);
 
   return (
     <div className="page">
       <header>
         <h1>Antoine Cairey</h1>
-        <nav className="menu-desktop">
-          <ul>
-            <li>
-              <a href="#!" onClick={() => handleClick(aboutRef)}>
-                <FontAwesomeIcon icon={faAddressCard} />{" "}
-                {data?.menu.about_me[lang]}
-              </a>
-            </li>
-            <li>
-              <a href="#!" onClick={() => handleClick(projectsRef)}>
-                <FontAwesomeIcon icon={faFileCode} />{" "}
-                {data?.menu.projects[lang]}
-              </a>
-            </li>
-            <li>
-              <a href="#!" onClick={() => handleClick(contactRef)}>
-                <FontAwesomeIcon icon={faEnvelope} /> {data?.menu.contact[lang]}
-              </a>
-            </li>
-
-            <div className="lang-select" onClick={changeLang}>
-              <div className={`select-pointer ${lang}`}></div>
-              <div>fr</div>
-              <div>en</div>
-            </div>
-          </ul>
-        </nav>
+        <Nav className="menu-desktop" />
         <button
           className="button-mobile"
           onClick={() => setShowMenu(!showMenu)}
@@ -73,27 +31,7 @@ export default function Home() {
             <FontAwesomeIcon icon={faBars} />
           </h1>
         </button>
-        {showMenu && (
-          <nav className="menu-mobile">
-            <ul>
-              <li>
-                <a href="#!" onClick={() => handleClick(aboutRef)}>
-                  <FontAwesomeIcon icon={faAddressCard} /> Présentation
-                </a>
-              </li>
-              <li>
-                <a href="#!" onClick={() => handleClick(projectsRef)}>
-                  <FontAwesomeIcon icon={faFileCode} /> Projets
-                </a>
-              </li>
-              <li>
-                <a href="#!" onClick={() => handleClick(contactRef)}>
-                  <FontAwesomeIcon icon={faEnvelope} /> Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        )}
+        {showMenu && <Nav className="menu-mobile" />}
       </header>
 
       <main>
