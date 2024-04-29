@@ -47,6 +47,9 @@ project_page:
   site_link:
     en: Go to website
     fr: Accéder au site
+  repo_link:
+    en: View code on GitHub
+    fr: Voir le code sur GitHub
   context:
     en: Context
     fr: Contexte
@@ -57,12 +60,12 @@ project_page:
     en: Feedback
     fr: Retour d'expérience
 
-
 projects:
   geocode:
     name: Geocode
-    link: https://lesgeocodeurs.laloupe-1.wilders.dev/
-    img_nb: 1
+    site_link: https://lesgeocodeurs.laloupe-1.wilders.dev/
+    repo_link: https://github.com/AntoineCairey/geocode
+    img_nb: 7
     date:
       en: jan-feb 2024
       fr: janv-fev 2024
@@ -80,8 +83,8 @@ projects:
       en: Reservation website for electric vehicle charging stations
       fr: Site web de réservation de bornes de recharge pour véhicules électriques
     context:
-      en: This is the last project of my training, carried out with 2 other devs over 2 months in all. The objective here is to create an app for reserving charging stations for electric vehicles. It has to include an interactive map and user account management (registration, login, etc.). 
-      fr: Il s’agit du dernier projet de ma formation, réalisé avec 2 autres devs sur 2 mois en tout. L’objectif ici est de réaliser une app de réservation de bornes de recharges pour véhicules électriques. Elle doit comporter notamment une carte interactive et une gestion de compte utilisateur (inscription, connexion, etc). 
+      en: This is the last project of my training, carried out with 2 other devs over 2 months in all. The objective here is to create an app for reserving charging stations for electric vehicles. It has to include an interactive map and user account management (registration, login, etc.).
+      fr: Il s’agit du dernier projet de ma formation, réalisé avec 2 autres devs sur 2 mois en tout. L’objectif ici est de réaliser une app de réservation de bornes de recharges pour véhicules électriques. Elle doit comporter notamment une carte interactive et une gestion de compte utilisateur (inscription, connexion, etc).
     development:
       en: The frontend uses React and its ecosystem. The map uses the Google Maps API, and styling is based on the MDBootstrap UI library. The backend is an API server in Express.js, with authentication via JWT and route protection according to user role. Data is stored on MySQL.
       fr: Le frontend utilise React et son écosystème. La carte utilise l’API Google Maps, et le style est basé sur la librairie UI MDBootstrap. Le backend est un serveur d’API en Express.js, avec authentification via JWT et protection des routes selon le rôle de l’utilisateur. Les données sont stockées sur MySQL.
@@ -91,8 +94,9 @@ projects:
 
   fragrance:
     name: Fragrance
-    link: https://www.loreal.com/fr/groupe/
-    img_nb: 1
+    site_link: https://www.loreal.com/fr/groupe/
+    repo_link: https://github.com/AntoineCairey/mon-parfum
+    img_nb: 5
     date:
       en: jan 2023 (3-day hackathon)
       fr: janv 2023 (hackathon 3 jours)
@@ -121,8 +125,9 @@ projects:
 
   elemen5:
     name: Elemen5
-    link: https://elemen5.vercel.app/
-    img_nb: 1
+    site_link: https://elemen5.vercel.app/
+    repo_link: https://github.com/AntoineCairey/elemen5
+    img_nb: 7
     date:
       en: dec 2023 - jan 2024
       fr: dec 2023 - janv 2024
@@ -147,8 +152,9 @@ projects:
 
   rodolf:
     name: Rodolf
-    link: https://rodolf.vercel.app/
-    img_nb: 3
+    site_link: https://rodolf.vercel.app/
+    repo_link: https://github.com/AntoineCairey/rodolf
+    img_nb: 5
     date:
       en: dec 2023 (2-day hackathon)
       fr: dec 2023 (hackathon 2 jours)

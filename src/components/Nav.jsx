@@ -1,4 +1,4 @@
-import { useNavigate, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressCard,
@@ -6,13 +6,8 @@ import {
   faFileCode,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Nav({ className }) {
+export default function Nav({ className, scrollToSection }) {
   const { data, lang, setLang } = useOutletContext();
-
-  const handleClick = (ref) => {
-    setShowMenu(false);
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
 
   const changeLang = (e) => {
     e.preventDefault();
@@ -23,19 +18,19 @@ export default function Nav({ className }) {
     <nav className={className}>
       <ul>
         <li>
-          <a href="#!" onClick={() => handleClick(aboutRef)}>
+          <div onClick={() => scrollToSection("about")}>
             <FontAwesomeIcon icon={faAddressCard} /> {data?.menu.about_me[lang]}
-          </a>
+          </div>
         </li>
         <li>
-          <a href="#!" onClick={() => handleClick(projectsRef)}>
+          <div onClick={() => scrollToSection("projects")}>
             <FontAwesomeIcon icon={faFileCode} /> {data?.menu.projects[lang]}
-          </a>
+          </div>
         </li>
         <li>
-          <a href="#!" onClick={() => handleClick(contactRef)}>
+          <div onClick={() => scrollToSection("contact")}>
             <FontAwesomeIcon icon={faEnvelope} /> {data?.menu.contact[lang]}
-          </a>
+          </div>
         </li>
 
         <div className="lang-select" onClick={changeLang}>

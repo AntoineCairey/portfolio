@@ -12,9 +12,17 @@ export default function Home() {
   const [showMenu, setShowMenu] = useState(false);
   const projects = ["geocode", "fragrance", "elemen5", "rodolf"];
 
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+  const navRefs = {
+    about: useRef(null),
+    projects: useRef(null),
+    contact: useRef(null),
+  };
+
+  const scrollToSection = (section) => {
+    console.log("coucou");
+    console.log(section);
+    navRefs[section].current.scrollIntoView({ behavior: "smooth" });
+  };
 
   console.log(data);
 
@@ -22,7 +30,7 @@ export default function Home() {
     <div className="page">
       <header>
         <h1>Antoine Cairey</h1>
-        <Nav className="menu-desktop" />
+        <Nav className="menu-desktop" scrollToSection={scrollToSection} />
         <button
           className="button-mobile"
           onClick={() => setShowMenu(!showMenu)}
@@ -31,11 +39,16 @@ export default function Home() {
             <FontAwesomeIcon icon={faBars} />
           </h1>
         </button>
-        {showMenu && <Nav className="menu-mobile" />}
+        {showMenu && (
+          <Nav className="menu-mobile" scrollToSection={scrollToSection} />
+        )}
       </header>
 
       <main>
-        <section ref={aboutRef} className="about">
+        <section ref={navRefs.about} className="about">
+          <div className="profile-pic">
+            <img src="/me.png" alt="me" />
+          </div>
           <h2>{data?.about_me.greeting[lang]}</h2>
           <div
             dangerouslySetInnerHTML={{
@@ -62,7 +75,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section ref={projectsRef} className="projects">
+        <section ref={navRefs.projects} className="projects">
           <h2>Projets</h2>
           <div className="projects-list">
             {projects.map((project) => (
@@ -71,7 +84,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section ref={contactRef} className="contact">
+        <section ref={navRefs.contact} className="contact">
           <h2>{data?.menu.contact[lang]}</h2>
           <div>{data?.contact.text[lang]}</div>
           <a href="">

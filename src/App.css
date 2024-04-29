@@ -111,6 +111,7 @@ header {
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 15px;
+    width: 180px;
 
     ul {
       flex-direction: column;
@@ -126,8 +127,9 @@ header {
       display: flex;
       align-items: center;
 
-      a {
+      div {
         color: lightgrey;
+        cursor: pointer;
 
         &:hover {
           color: var(--text-color);
@@ -138,7 +140,7 @@ header {
 
     .lang-select {
       display: flex;
-      border: 1px solid white;
+      border: 1px solid lightgrey;
       border-radius: 5px;
       position: relative;
       cursor: pointer;
@@ -151,7 +153,7 @@ header {
 
       .select-pointer {
         position: absolute;
-        background-color: darkcyan;
+        background-color: var(--focus-or-hover-border-color);
         z-index: -1;
         transition: 2s;
       }
@@ -165,20 +167,32 @@ header {
 
 main {
   flex: 1;
+  padding-top: 100px;
 }
 
 section {
-  /* min-height: calc(100vh - var(--header-height)); */
-  padding-top: calc(var(--header-height) + var(--medium-spacing));
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
 }
 
 .about {
-  /* align-items: center; */
   justify-content: center;
   max-width: 500px;
   margin: auto;
+
+  .profile-pic {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 100%;
+    }
+  }
 
   ul {
     list-style-type: none;
@@ -243,6 +257,10 @@ section {
   }
 }
 
+/* .contact {
+  margin-bottom: 80px;
+} */
+
 footer {
   border-top: var(--border);
   display: flex;
@@ -252,8 +270,43 @@ footer {
 }
 
 .project-page {
-  img {
-    max-height: 200px;
+  main {
+    max-width: 800px;
+    margin: auto;
+
+    h3 {
+      padding-block: 10px;
+    }
+  }
+
+  .project-pic {
+    height: 200px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 0 0 2px grey;
+      border-radius: 2px;
+    }
+  }
+
+  .project-header > div {
+    padding-bottom: 20px;
+  }
+
+  .project-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-block: 30px;
+
+    img {
+      max-height: 200px;
+      /* border: grey 1px solid; */
+      box-shadow: 0 0 2px grey;
+      border-radius: 2px;
+    }
   }
 }
 
@@ -275,6 +328,11 @@ footer {
   main,
   footer {
     padding-inline: 48px;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
