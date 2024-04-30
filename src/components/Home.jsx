@@ -58,17 +58,17 @@ export default function Home() {
           <br />
           <ul>
             <li>
-              <a href="">
+              <a href="/CV-AntoineCairey-DeveloppeurWeb.pdf" target="_blank">
                 <FontAwesomeIcon icon={faFile} /> CV
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/antoine-cairey/">
+              <a href="https://www.linkedin.com/in/antoine-cairey/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/AntoineCairey">
+              <a href="https://github.com/AntoineCairey" target="_blank">
                 <FontAwesomeIcon icon={faGithub} /> GitHub
               </a>
             </li>
@@ -87,10 +87,10 @@ export default function Home() {
         <section ref={navRefs.contact} className="contact">
           <h2>{data?.menu.contact[lang]}</h2>
           <div>{data?.contact.text[lang]}</div>
-          <a href="">
+          <a href="javascript:void(0)">
             {">"} <FontAwesomeIcon icon={faEnvelope} /> cairey.antoine@gmail.com{" "}
           </a>
-          <a href="https://www.linkedin.com/in/antoine-cairey/">
+          <a href="https://www.linkedin.com/in/antoine-cairey/" target="_blank">
             {">"} <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
           </a>
         </section>
@@ -98,7 +98,7 @@ export default function Home() {
 
       <footer>
         <div>{data?.footer.text[lang]}</div>
-        <a href="https://github.com/AntoineCairey/portfolio">
+        <a href="https://github.com/AntoineCairey/portfolio" target="_blank">
           {">"} <FontAwesomeIcon icon={faGithub} />{" "}
           {data?.footer.repo_link[lang]}
         </a>
