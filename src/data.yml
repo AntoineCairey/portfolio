@@ -94,8 +94,8 @@ projects:
 
   fragrance:
     name: Fragrance
-    site_link: https://www.loreal.com/fr/groupe/
-    repo_link: https://github.com/AntoineCairey/mon-parfum
+    site_link: https://fragrance.antoinecairey.com/
+    repo_link: https://github.com/AntoineCairey/fragrance
     img_nb: 5
     date:
       en: jan 2023 (3-day hackathon)
