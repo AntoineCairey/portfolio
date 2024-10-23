@@ -61,6 +61,33 @@ project_page:
     fr: Retour d'expérience
 
 projects:
+  whist22:
+    name: Tarot Africain
+    site_link: https://whist22.vercel.app/
+    repo_link: https://github.com/AntoineCairey/whist22
+    img_nb: 0
+    date:
+      en: june-oct 2024
+      fr: juin-oct 2024
+    team:
+      en: Solo project
+      fr: Projet solo
+    tech:
+      - name: React
+        icon: faReact
+    short_text:
+      en: Card game application available online and offline
+      fr: Application de jeu de cartes disponible en ligne et hors ligne
+    context:
+      en: This personal project was an opportunity to challenge my React skills by creating a card game. The game here is Whist 22, a fast-paced and lively game I often play with my friends. The app lets you play a game against 3 bots.
+      fr: Ce projet personnel était l'occasion de challenger mes compétences en React en créant un jeu de cartes. Il s'agit ici du tarot africain, un jeu rapide et animé auquel je joue souvent avec mes amis. L'application permet de jouer une partie contre 3 bots.
+    development:
+      en: It's essentially a frontend app developed only in React. I then transformed it into a PWA using the “Vite PWA” plugin, designed to work with my Vite build tool. The PWA allows the app to be installed on the user's device so that it can work offline.
+      fr: Il s'agit à la base d'une app frontend développée uniquement en React. Je l'ai ensuite transformée en PWA grace au plugin "Vite PWA", conçu pour fonctionner avec mon outil de build Vite. La PWA permet d'installer l'app sur l'appareil de l'utilisateur pour qu'elle puisse fonctionner hors ligne.
+    feedback:
+      en: The first challenge was to code the logic of a Whist 22 game, but also the bots' decision-making algorithm, which was particularly interesting for me. Once this was done, I ran into a problem with the management of delays between different actions, which are essential for flow to feel like a real card game. This eventually led me to refactor all my code to take a more suitable approach to managing these delays in React. Finally, I was able to learn how PWAs work and the technical requirements needed to enable the app to be installed.
+      fr: Le premier challenge était de coder la logique du déroulement d'une partie de tarot africain, mais aussi l'algorithme de prise de décision des bots, ce qui était particulièrement intéressant pour moi. Une fois cela fait, j'ai rencontré une difficulté sur la gestion des délais d'attente entre différentes actions, qui sont essentiels dans le jeu pour que le déroulement ressemble à une vraie partie de cartes. Cela m'a finalement conduit à refactoriser l'ensemble de mon code pour prendre une approche plus adaptée à la gestion de ces délais en React. Enfin, j'ai pu apprendre le fonctionnement des PWA et les exigences techniques nécessaires pour permettre l'installation de l'app.
+
   geocode:
     name: Geocode
     site_link: https://lesgeocodeurs.laloupe-1.wilders.dev/
