@@ -1,10 +1,10 @@
 import { useNavigate, useOutletContext } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { faNodeJs, faReact, faAngular, faJava } from "@fortawesome/free-brands-svg-icons";
 
 export default function ProjectCard({ project }) {
-  const icons = { faDatabase, faNodeJs, faReact };
+  const icons = { faDatabase, faLeaf, faNodeJs, faReact, faAngular, faJava };
   const navigate = useNavigate();
   const { data, lang } = useOutletContext();
   const projectData = data.projects[project]

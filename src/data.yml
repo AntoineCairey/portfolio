@@ -1,92 +1,127 @@
 menu:
   about_me:
-    en: About me
     fr: Présentation
+    en: About me
   projects:
-    en: Projects
     fr: Projets
+    en: Projects
   contact:
-    en: Contact
     fr: Contact
+    en: Contact
 
 about_me:
   greeting:
-    en: Hello ! 👋
     fr: Bonjour ! 👋
+    en: Hello ! 👋
   description:
-    en: >
-      <p>I'm Antoine Cairey, <strong>JavaScript fullstack developer.</strong></p>
-      <br />
-      <p>After studying general engineering and 7 years as an IT project manager, I decided to switch to the other side and become a web developer.</p>
-      <br />
-      <p>I'm now looking for a company to put my skills and motivation to good use. I've mastered <strong>React</strong> and <strong>Node.js</strong>, and I'm not afraid to learn new technologies!</p>
     fr: >
       <p>Je suis Antoine Cairey, <strong>développeur JavaScript fullstack.</strong></p>
       <br />
       <p>Après des études d'ingénieur généraliste et 7 ans en tant que chef de projet informatique, j'ai choisi de passer de l'autre côté de la barrière pour devenir développeur web.</p>
       <br />
       <p>Je cherche aujourd'hui une entreprise pour mettre à profit mes compétences et ma motivation. Je maîtrise <strong>React</strong> et <strong>Node.js</strong>, et je n'ai pas peur d'apprendre de nouvelles technos !</p>
+    en: >
+      <p>I'm Antoine Cairey, <strong>JavaScript fullstack developer.</strong></p>
+      <br />
+      <p>After studying general engineering and 7 years as an IT project manager, I decided to switch to the other side and become a web developer.</p>
+      <br />
+      <p>I'm now looking for a company to put my skills and motivation to good use. I've mastered <strong>React</strong> and <strong>Node.js</strong>, and I'm not afraid to learn new technologies!</p>
 
 contact:
   text:
-    en: Don't hesitate to contact me!
     fr: N’hésitez pas à me contacter !
+    en: Don't hesitate to contact me!
 
 footer:
   text:
-    en: Made in Bordeaux by Antoine Cairey
     fr: Réalisé à Bordeaux par Antoine Cairey
+    en: Made in Bordeaux by Antoine Cairey
   repo_link:
-    en: View this site's code
     fr: Voir le code de ce site
+    en: View this site's code
 
 project_page:
   back:
-    en: Back
     fr: Retour
+    en: Back
   site_link:
-    en: Go to website
     fr: Accéder au site
+    en: Go to website
   repo_link:
-    en: View code on GitHub
     fr: Voir le code sur GitHub
+    en: View code on GitHub
   context:
-    en: Context
     fr: Contexte
+    en: Context
   development:
-    en: Development
     fr: Réalisation
+    en: Development
   feedback:
-    en: Feedback
     fr: Retour d'expérience
+    en: Feedback
 
 projects:
+  kanji:
+    name: Kanji Master
+    site_link: https://kanji.antoinecairey.com/
+    repo_link: https://github.com/AntoineCairey/kanji
+    img_nb: 0
+    date:
+      fr: fev-mars 2024
+      en: feb-mar 2024
+    team:
+      fr: Projet solo
+      en: Solo project
+    tech:
+      - name: Angular
+        icon: faAngular
+      - name: Spring
+        icon: faJava
+      - name: MySQL
+        icon: faDatabase
+    short_text:
+      fr: Application pour apprendre les caractères japonais
+      en: Japanese character learning app
+    context:
+      fr: J'apprends le japonais à mes heures perdues, et le plus difficile selon moi est l'apprentissage des kanjis (idéogrammes). La méthode la plus efficace pour cet apprentissage "par coeur" est la répétition espacée. Dans notre cas, l'app va présenter un kanji à l'utilisateur, qui doit indiquer s'il le connait ou non. Selon sa réponse, l'app va calculer dans combien de temps elle lui montrera à nouveau ce kanji. Ce sytème permet d'optimiser l'apprentissage en montrant une kanji au moment où on risque de l'oublier.
+      en: I learn Japanese in my spare time, and the hardest part for me is learning the kanji (ideograms). The most effective method for this is spaced repetition.  In our case, the app will show a kanji to the user, and ask whether or not he or she knows it. Depending on the user's response, the app will calculate when it will show the kanji again. This system optimizes learning by showing a kanji just when you're likely to forget it.
+    development:
+      fr: Ce projet était l'occasion de pratiquer la stack Java/Angular apprise récemment. Le frontend Angular utilise le nouveau système de Signals pour gérer les données dynamiques. Le backend utilise Spring Boot, avec Maven comme outil de build, Spring Security pour l'authentification, et Spring Data JPA (Hibernate) comme ORM. Tout ça est relié à une base de données MySQL pour stocker les données utilisateur. Le projet est déployé sur un VPS avec Caddy comme serveur web et Docker Compose comme conteneur pour le backend.
+      en: This project was an opportunity to practice the recently learned Java/Angular stack. The Angular frontend uses the new Signals system to manage dynamic data. The backend uses Spring Boot, with Maven as the build tool, Spring Security for authentication, and Spring Data JPA (Hibernate) as the ORM. All this is linked to a MySQL database to store user data. The project is deployed on a VPS with Caddy as the web server and Docker Compose as the backend container.
+    feedback:
+      fr: "Ce projet était mon premier avec cette stack et donc l'occasion de nombreuses découvertes et recherches dans la documentation. Il fallait adopter une nouvelle façon de penser orientée objet, très différente de mon expérience en React/Node. J'ai d'abord vu les inconvénients : on écrit plus de code, il faut tout définir, tout typer, ça parait très contraignant au début. Puis j'ai commencé à prendre le pli et voir les avantages : une seule façon standard de faire chaque chose, pas d'erreur au runtime. Je comprends d'autant mieux la popularité de cette stack pour les grandes applications et entreprises."
+      en: "This was my first project with this stack, and therefore the occasion for a lot of discoveries and research in the documentation. I had to adopt a new object-oriented way of thinking, very different from my React/Node experience. At first, I saw the disadvantages: you write more code, you have to define and type everything, and it seemed very restrictive at first. Then I started to see the advantages: one standard way of doing everything, no runtime errors. I now understand all the more why this stack is so popular with large applications and companies."
+
   whist22:
     name: Tarot Africain
     site_link: https://tarot.antoinecairey.com/
     repo_link: https://github.com/AntoineCairey/whist22
     img_nb: 0
     date:
-      en: june-oct 2024
       fr: juin-oct 2024
+      en: june-oct 2024
     team:
-      en: Solo project
       fr: Projet solo
+      en: Solo project
     tech:
       - name: React
         icon: faReact
+      - name: Node.js
+        icon: faNodeJs
+      - name: MongoDB
+        icon: faLeaf
     short_text:
-      en: Card game application available online and offline
       fr: Application de jeu de cartes disponible en ligne et hors ligne
+      en: Card game application available online and offline
     context:
-      en: This personal project was an opportunity to challenge my React skills by creating a card game. The game here is Whist 22, a fast-paced and lively game I often play with my friends. The app lets you play a game against 3 bots.
-      fr: Ce projet personnel était l'occasion de challenger mes compétences en React en créant un jeu de cartes. Il s'agit ici du tarot africain, un jeu rapide et animé auquel je joue souvent avec mes amis. L'application permet de jouer une partie contre 3 bots.
+      fr: Ce projet personnel était l'occasion de challenger mes compétences en créant un jeu de cartes. Il s'agit ici du tarot africain, un jeu rapide et animé auquel je joue souvent avec mes amis. L'application permet de jouer une partie contre 3 bots. Les joueurs peuvent créer un compte pour enregister leurs scores et apparaître dans le classement général de l'app.
+      en: This personal project was an opportunity to challenge my skills by creating a card game. The game here is Whist 22, a fast-paced and lively game I often play with my friends. The app lets you play a game against 3 bots. Players can create an account to record their scores and appear in the app's general ranking.
     development:
-      en: It's essentially a frontend app developed only in React. I then transformed it into a PWA using the “Vite PWA” plugin, designed to work with my Vite build tool. The PWA allows the app to be installed on the user's device so that it can work offline.
-      fr: Il s'agit à la base d'une app frontend développée uniquement en React. Je l'ai ensuite transformée en PWA grace au plugin "Vite PWA", conçu pour fonctionner avec mon outil de build Vite. La PWA permet d'installer l'app sur l'appareil de l'utilisateur pour qu'elle puisse fonctionner hors ligne.
+      fr: Le frontend est basé sur React. Il utilise Vite PWA pour créer une Progressive Web App, ce qui permet d'installer l'app sur l'appareil (smartphone ou ordinateur), pour pouvoir jouer hors ligne. Le backend utilise Node.js, relié à une base de données MongoDB. Le projet est déployé sur un VPS, et utilise Docker Compose et Caddy Web Server.
+      en: The frontend is based on React. It uses Vite PWA to create a Progressive Web App, enabling the app to be installed on the device (smartphone or computer), for offline play. The backend uses Node.js, linked to a MongoDB database. The project is deployed on a VPS, using Docker Compose and Caddy Web Server.
     feedback:
-      en: The first challenge was to code the logic of a Whist 22 game, but also the bots' decision-making algorithm, which was particularly interesting for me. Once this was done, I ran into a problem with the management of delays between different actions, which are essential for flow to feel like a real card game. This eventually led me to refactor all my code to take a more suitable approach to managing these delays in React. Finally, I was able to learn how PWAs work and the technical requirements needed to enable the app to be installed.
-      fr: Le premier challenge était de coder la logique du déroulement d'une partie de tarot africain, mais aussi l'algorithme de prise de décision des bots, ce qui était particulièrement intéressant pour moi. Une fois cela fait, j'ai rencontré une difficulté sur la gestion des délais d'attente entre différentes actions, qui sont essentiels dans le jeu pour que le déroulement ressemble à une vraie partie de cartes. Cela m'a finalement conduit à refactoriser l'ensemble de mon code pour prendre une approche plus adaptée à la gestion de ces délais en React. Enfin, j'ai pu apprendre le fonctionnement des PWA et les exigences techniques nécessaires pour permettre l'installation de l'app.
+      fr: Le premier challenge était de coder la logique du déroulement d'une partie de tarot africain, mais aussi l'algorithme de prise de décision des bots, ce qui était particulièrement intéressant pour moi. J'ai aussi appris le fonctionnement des PWA et les exigences techniques nécessaires pour permettre l'installation de l'app. Côté backend, j'ai voulu tester une base de données NoSQL avec MongoDB. C'est une logique très différente du SQL, que ce ce soit sur la structuration des données ou sur la façon de requêter et la syntaxe associée. Une fois maîtrisé, c'est une alternative vraiment intéressante, car elle permet une grande liberté de structure, mais aussi de scaler plus facilement pour gérer de grands volumes de données.
+      en: The first challenge was to code the logic of a Whist 22 game, but also the bots' decision-making algorithm, which was particularly interesting for me. I also learned how PWAs work and the technical requirements needed to enable app installation. On the backend, I wanted to test a NoSQL database with MongoDB. The logic is very different from SQL, in terms of data structuring, querying and syntax. Once mastered, it's a really interesting alternative, as it gives you a great deal of freedom in terms of structure, but also allows you to scale more easily to manage large volumes of data.
 
   geocode:
     name: Geocode
@@ -94,11 +129,11 @@ projects:
     repo_link: https://github.com/AntoineCairey/geocode
     img_nb: 7
     date:
-      en: jan-feb 2024
       fr: janv-fev 2024
+      en: jan-feb 2024
     team:
-      en: Group project (3 devs)
       fr: Projet de groupe (3 devs)
+      en: Group project (3 devs)
     tech:
       - name: React
         icon: faReact
@@ -107,17 +142,17 @@ projects:
       - name: MySQL
         icon: faDatabase
     short_text:
-      en: Reservation website for electric vehicle charging stations
       fr: Site web de réservation de bornes de recharge pour véhicules électriques
+      en: Reservation website for electric vehicle charging stations
     context:
-      en: This is the last project of my training, carried out with 2 other devs over 2 months in all. The objective here is to create an app for reserving charging stations for electric vehicles. It has to include an interactive map and user account management (registration, login, etc.).
       fr: Il s’agit du dernier projet de ma formation, réalisé avec 2 autres devs sur 2 mois en tout. L’objectif ici est de réaliser une app de réservation de bornes de recharges pour véhicules électriques. Elle doit comporter notamment une carte interactive et une gestion de compte utilisateur (inscription, connexion, etc).
+      en: This is the last project of my training, carried out with 2 other devs over 2 months in all. The objective here is to create an app for reserving charging stations for electric vehicles. It has to include an interactive map and user account management (registration, login, etc.).
     development:
-      en: The frontend uses React and its ecosystem. The map uses the Google Maps API, and styling is based on the MDBootstrap UI library. The backend is an API server in Express.js, with authentication via JWT and route protection according to user role. Data is stored on MySQL.
       fr: Le frontend utilise React et son écosystème. La carte utilise l’API Google Maps, et le style est basé sur la librairie UI MDBootstrap. Le backend est un serveur d’API en Express.js, avec authentification via JWT et protection des routes selon le rôle de l’utilisateur. Les données sont stockées sur MySQL.
+      en: The frontend uses React and its ecosystem. The map uses the Google Maps API, and styling is based on the MDBootstrap UI library. The backend is an API server in Express.js, with authentication via JWT and route protection according to user role. Data is stored on MySQL.
     feedback:
-      en: I particularly enjoyed working on user authentication (frontend and backend), as well as the interactive map, 2 technical challenges I'd never tackled before.
       fr: J’ai particulièrement aimé travailler sur l’authentification utilisateur (frontend et backend), ainsi que sur la carte interactive, 2 défis techniques que je n’avais jamais relevés.
+      en: I particularly enjoyed working on user authentication (frontend and backend), as well as the interactive map, 2 technical challenges I'd never tackled before.
 
   fragrance:
     name: Fragrance
@@ -125,11 +160,11 @@ projects:
     repo_link: https://github.com/AntoineCairey/fragrance
     img_nb: 5
     date:
-      en: jan 2023 (3-day hackathon)
       fr: janv 2023 (hackathon 3 jours)
+      en: jan 2023 (3-day hackathon)
     team:
-      en: Group project (5 devs)
       fr: Projet de groupe (5 devs)
+      en: Group project (5 devs)
     tech:
       - name: React
         icon: faReact
@@ -138,17 +173,17 @@ projects:
       - name: MySQL
         icon: faDatabase
     short_text:
-      en: Fragrance recommendation based on your favorite scents
       fr: Recommandation de parfum basée sur vos odeurs préférées
+      en: Fragrance recommendation based on your favorite scents
     context:
-      en: Project created with 4 other devs, during a 3-day hackathon in partnership with the L'Oréal group. The application begins by asking the user if he or she enjoys different everyday scents. Then, based on their answers, it suggests a selection of fragrances suited to their preferences.
       fr: Projet créé avec 4 autres devs, lors d’un hackathon de 3 jours en partenariat avec le groupe L’Oréal. L’application commence demander à l’utilisateur s’il apprécie différentes odeurs du quotidien. Puis, à partir de ses réponses, elle lui propose une sélection de parfums adaptés à ses préférences.
+      en: Project created with 4 other devs, during a 3-day hackathon in partnership with the L'Oréal group. The application begins by asking the user if he or she enjoys different everyday scents. Then, based on their answers, it suggests a selection of fragrances suited to their preferences.
     development:
-      en: The interface is based on React, and the styling is in vanilla CSS. The Express.js backend relies on the MySQL database to calculate the recommendations returned to the user.
       fr: L’interface est basée sur React, et le style est en CSS vanilla. Le backend Express.js se base sur la base de données MySQL pour calculer les recommandations renvoyées à l’utilisateur.
+      en: The interface is based on React, and the styling is in vanilla CSS. The Express.js backend relies on the MySQL database to calculate the recommendations returned to the user.
     feedback:
-      en: Creating a fullstack app in such a short time was very rewarding. I particularly enjoyed working on the perfume recommendation algorithm, a very interesting technical challenge.
       fr: Créer une app fullstack dans un temps aussi court était très enrichissant. J’ai particulièrement apprécié travailler sur l’algorithme de recommandation des parfums, un challenge technique très intéressant.
+      en: Creating a fullstack app in such a short time was very rewarding. I particularly enjoyed working on the perfume recommendation algorithm, a very interesting technical challenge.
 
   elemen5:
     name: Elemen5
@@ -156,26 +191,26 @@ projects:
     repo_link: https://github.com/AntoineCairey/elemen5
     img_nb: 7
     date:
-      en: dec 2023 - jan 2024
       fr: dec 2023 - janv 2024
+      en: dec 2023 - jan 2024
     team:
-      en: Group project (5 devs)
       fr: Projet de groupe (5 devs)
+      en: Group project (5 devs)
     tech:
       - name: React
         icon: faReact
     short_text:
-      en: Film and series catalog inspired by IMDb
       fr: Catalogue de film et séries inspiré de IMDb
+      en: Film and series catalog inspired by IMDb
     context:
-      en: Project carried out during my training with 4 other devs over 1 month. The idea here is to create a "catalog" app for films and series, a bit like IMDb. The app features a home page with suggestions, a search function using text and filters, and of course the film and series cards.
       fr: Projet réalisé pendant ma formation avec 4 autres devs sur 1 mois. L’idée ici est de réaliser une app “catalogue” de films et séries, un peu comme IMDb. L’app présente une page d’accueil avec des suggestions, une fonction de recherche par texte et filtre, et bien sûr les fiches de films et séries.
+      en: Project carried out during my training with 4 other devs over 1 month. The idea here is to create a "catalog" app for films and series, a bit like IMDb. The app features a home page with suggestions, a search function using text and filters, and of course the film and series cards.
     development:
-      en: The frontend is built with React and the styling with Sass. The data comes from TMDB, a community site that provides a comprehensive public API.
       fr: Le frontend est réalisé avec React et le style en Sass. Les données proviennent de TMDB, un site communautaire qui fournit une API publique très complète.
+      en: The frontend is built with React and the styling with Sass. The data comes from TMDB, a community site that provides a comprehensive public API.
     feedback:
-      en: This was my first major project using React, and it enabled me to understand its advantages and disadvantages. It was also an opportunity to set up a real Git workflow to work in parallel on the project.
       fr: Un premier projet d’envergure en React, qui m’a permis d’en comprendre les avantages et inconvénients. C’était aussi l’occasion de mettre en place un vrai workflow Git pour travailler en parallèle sur le projet.
+      en: This was my first major project using React, and it enabled me to understand its advantages and disadvantages. It was also an opportunity to set up a real Git workflow to work in parallel on the project.
 
   rodolf:
     name: Rodolf
@@ -183,23 +218,23 @@ projects:
     repo_link: https://github.com/AntoineCairey/rodolf
     img_nb: 5
     date:
-      en: dec 2023 (2-day hackathon)
       fr: dec 2023 (hackathon 2 jours)
+      en: dec 2023 (2-day hackathon)
     team:
-      en: Group project (3 devs)
       fr: Projet de groupe (3 devs)
+      en: Group project (3 devs)
     tech:
       - name: React
         icon: faReact
     short_text:
-      en: Mobile game to liven up family meals
       fr: Jeu mobile pour animer les repas de famille
+      en: Mobile game to liven up family meals
     context:
-      en: Project created with 2 other devs during a 2-day holiday-themed hackathon. We wanted to create a kind of atmospheric game for family dinners, offering jokes, challenges and puzzles to players in turn.
       fr: Projet créé avec 2 autres devs lors d’un hackathon de 2 jours sur le thème des fêtes de fin d’année. Nous avons voulu créer une sorte de jeu d’ambiance pour les repas de famille, qui propose des blagues, défis et énigmes aux joueurs à tour de rôle.
+      en: Project created with 2 other devs during a 2-day holiday-themed hackathon. We wanted to create a kind of atmospheric game for family dinners, offering jokes, challenges and puzzles to players in turn.
     development:
-      en: The app is frontend-only, built in React. Joke and game data are retrieved in a JSON file.
       fr: L’app est uniquement frontend, réalisée en React. Les données des blagues et jeux sont récupérées dans un fichier JSON.
+      en: The app is frontend-only, built in React. Joke and game data are retrieved in a JSON file.
     feedback:
-      en: The short time frame taught us to work under pressure and prioritize the most important tasks. It was quite a success, as we won the hackathon 🏆
       fr: Le temps imparti très court apprend à travailler sous pression et prioriser les tâches les plus importantes. Ce fut plutôt une réussite car nous avons remporté ce hackathon 🏆
+      en: The short time frame taught us to work under pressure and prioritize the most important tasks. It was quite a success, as we won the hackathon 🏆

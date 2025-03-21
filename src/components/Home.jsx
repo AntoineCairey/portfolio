@@ -10,7 +10,7 @@ import Nav from "./Nav";
 export default function Home() {
   const { data, lang } = useOutletContext();
   const [showMenu, setShowMenu] = useState(false);
-  const projects = ["whist22", "geocode", "fragrance", "elemen5", "rodolf"];
+  const projects = ["kanji", "whist22", "geocode", "fragrance", "elemen5", "rodolf"];
 
   const navRefs = {
     about: useRef(null),
