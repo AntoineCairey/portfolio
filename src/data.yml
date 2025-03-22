@@ -65,7 +65,7 @@ projects:
     name: Kanji Master
     site_link: https://kanji.antoinecairey.com/
     repo_link: https://github.com/AntoineCairey/kanji
-    img_nb: 0
+    img_nb: 5
     date:
       fr: fev-mars 2024
       en: feb-mar 2024
@@ -92,11 +92,11 @@ projects:
       fr: "Ce projet était mon premier avec cette stack et donc l'occasion de nombreuses découvertes et recherches dans la documentation. Il fallait adopter une nouvelle façon de penser orientée objet, très différente de mon expérience en React/Node. J'ai d'abord vu les inconvénients : on écrit plus de code, il faut tout définir, tout typer, ça parait très contraignant au début. Puis j'ai commencé à prendre le pli et voir les avantages : une seule façon standard de faire chaque chose, pas d'erreur au runtime. Je comprends d'autant mieux la popularité de cette stack pour les grandes applications et entreprises."
       en: "This was my first project with this stack, and therefore the occasion for a lot of discoveries and research in the documentation. I had to adopt a new object-oriented way of thinking, very different from my React/Node experience. At first, I saw the disadvantages: you write more code, you have to define and type everything, and it seemed very restrictive at first. Then I started to see the advantages: one standard way of doing everything, no runtime errors. I now understand all the more why this stack is so popular with large applications and companies."
 
-  whist22:
+  tarot:
     name: Tarot Africain
     site_link: https://tarot.antoinecairey.com/
     repo_link: https://github.com/AntoineCairey/whist22
-    img_nb: 0
+    img_nb: 5
     date:
       fr: juin-oct 2024
       en: june-oct 2024
@@ -185,8 +185,8 @@ projects:
       fr: Créer une app fullstack dans un temps aussi court était très enrichissant. J’ai particulièrement apprécié travailler sur l’algorithme de recommandation des parfums, un challenge technique très intéressant.
       en: Creating a fullstack app in such a short time was very rewarding. I particularly enjoyed working on the perfume recommendation algorithm, a very interesting technical challenge.
 
-  elemen5:
-    name: Elemen5
+  moviz:
+    name: Moviz
     site_link: https://elemen5.vercel.app/
     repo_link: https://github.com/AntoineCairey/elemen5
     img_nb: 7

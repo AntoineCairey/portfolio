@@ -27,7 +27,7 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
       </div>
-      <img src={`/${project}.png`} alt="screenshot" />
+      <img src={`${project}/${project}.png`} alt="screenshot" />
     </div>
   );
 }

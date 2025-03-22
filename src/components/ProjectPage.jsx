@@ -34,7 +34,7 @@ export default function ProjectPage() {
             </a>
           </div>
           <div className="project-pic">
-            <img src={`/${project}.png`} alt="screenshot" />
+            <img src={`${project}/${project}.png`} alt="screenshot" />
           </div>
         </div>
 
@@ -51,7 +51,7 @@ export default function ProjectPage() {
         <div className="project-pics">
           {[...Array(projectData.img_nb)].map((_, index) => (
             <img
-              src={`/${project}${index + 1}.png`}
+              src={`${project}/${project}${index + 1}.png`}
               alt="screenshot"
               key={index}
             />
